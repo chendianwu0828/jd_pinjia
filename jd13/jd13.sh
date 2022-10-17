@@ -49,4 +49,4 @@ else
     fi
 fi
 
-echo "代理变量名：proxy_url ,代理返回格式位：ip:端口"
+echo "代理变量名：proxy_url ,代理返回格式位：ip:端口  推荐星空代理"
