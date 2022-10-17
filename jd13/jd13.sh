@@ -1,6 +1,7 @@
 #!/bin/bash
 # new Env('京东13红包');
 # 
+
 eval "rm -rf ./jd13"
 _ftype=""
 get_arch=`arch`
@@ -47,3 +48,5 @@ else
         download_jd13
     fi
 fi
+
+echo "代理变量名：proxy_url ,代理返回格式位：ip:端口"
