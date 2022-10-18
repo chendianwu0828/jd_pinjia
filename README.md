@@ -8,4 +8,6 @@
 
 RepoFileExtensions="js py ts sh"
 
-本仓库佛系更新 
+愿意用您就用 跳梁小丑您别用
+
+佛系薅毛 心态不好且容易摆烂
