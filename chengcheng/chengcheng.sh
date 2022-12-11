@@ -1,5 +1,5 @@
 #!/bin/bash
-# new Env('京东登录有礼红包');
+# new Env('城城分领现金');
 # 
 eval "rm -rf ./chengcheng"
 _ftype=""
