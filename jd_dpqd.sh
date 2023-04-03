@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # new Env('京东店铺签到');
 # 
 _ftype=""
