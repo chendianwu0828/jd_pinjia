@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # new Env('京东店铺签到');
 # 
 _ftype=""
@@ -14,13 +14,6 @@ else
 	_ftype=""
 fi
 
-if ! apk info gcompat > /dev/null 2>&1; then
-  apk add --no-cache gcompat
-fi
-
-if ! apk info libc6-compat > /dev/null 2>&1; then
-  apk add --no-cache libc6-compat
-fi
 
 download_jd_8(){
 echo "开始下载jd_dpqd二进制文件到$PWD/jd_dpqd目录"
@@ -28,21 +21,29 @@ curl -sS -o $PWD/jd_dpqd --create-dirs https://ghproxy.com/https://github.com/ch
 echo "下载完成，如需重新下载或更新请先删除该文件"
 if [ -f "$PWD/jd_dpqd" ]; then
     echo "$PWD/jd_dpqd"
-    eval "chmod +x ./jd_dpqd"
+    eval "chmod 777 ./jd_dpqd"
     eval "./jd_dpqd"
 fi
 }
+if apk add gcompat >/dev/null 2>&1; then
+    echo ""
+fi
 
+if apk add libc6-compat >/dev/null 2>&1; then
+    echo ""
+fi
 if [ $_ftype == "" ]; then
 	echo "不支持的架构$get_arch"
 else
 	echo "执行$_ftype"
     if [ -f "$PWD/jd_dpqd" ]; then
         echo "$PWD/jd_dpqd"
-        eval "chmod +x ./jd_dpqd"
+        eval "chmod 777 ./jd_dpqd"
         eval "./jd_dpqd"
     else
         echo "在$PWD目录下均未找到文件jd_dpqd，尝试拉取远程仓库文件jd_dpqd"
         download_jd_8
     fi
 fi
+
+
