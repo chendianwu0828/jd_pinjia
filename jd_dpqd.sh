@@ -1,7 +1,6 @@
 #!/bin/bash
 # new Env('京东店铺签到');
 # 
-eval "rm -rf ./jd_dpqd"
 _ftype=""
 get_arch=`arch`
 echo $get_arch
