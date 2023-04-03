@@ -14,6 +14,14 @@ else
 	_ftype=""
 fi
 
+if ! apk info gcompat > /dev/null 2>&1; then
+  apk add --no-cache gcompat
+fi
+
+if ! apk info libc6-compat > /dev/null 2>&1; then
+  apk add --no-cache libc6-compat
+fi
+
 download_jd_8(){
 echo "开始下载jd_dpqd二进制文件到$PWD/jd_dpqd目录"
 curl -sS -o $PWD/jd_dpqd --create-dirs https://ghproxy.com/https://github.com/chendianwu0828/jd_pinjia/releases/download/1.0/jd_dpqd
