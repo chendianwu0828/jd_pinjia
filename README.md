@@ -10,5 +10,3 @@ RepoFileExtensions="js py ts sh"
 
 ## 有问题反馈，有空回：https://t.me/chendianwu666
 
-## 摆烂地址：http://www.chendianwu0828.top:5016 前排车位空缺
-
