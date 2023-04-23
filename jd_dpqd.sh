@@ -17,7 +17,7 @@ fi
 
 download_jd_8(){
 echo "开始下载jd_dpqd二进制文件到$PWD/jd_dpqd目录"
-curl -sS -o $PWD/jd_dpqd --create-dirs https://ghproxy.com/https://github.com/chendianwu0828/jd_pinjia/releases/download/1.0/jd_dpqd
+curl -sS -o $PWD/jd_dpqd --create-dirs https://github.com/chendianwu0828/jd_pinjia/releases/download/1.0/jd_dpqd
 echo "下载完成，如需重新下载或更新请先删除该文件"
 if [ -f "$PWD/jd_dpqd" ]; then
     echo "$PWD/jd_dpqd"
