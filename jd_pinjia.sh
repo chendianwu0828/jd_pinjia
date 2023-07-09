@@ -1,6 +1,6 @@
 #!/bin/bash
 # new Env('京东评价');
-# 
+#  
 eval "rm -rf ./pinjia"
 _ftype=""
 get_arch=`arch`
