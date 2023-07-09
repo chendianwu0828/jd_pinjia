@@ -1,6 +1,6 @@
 #!/bin/bash
 # new Env('京东微信红包团');
-# 
+#  
 eval "rm -rf ./jd_hbt"
 _ftype=""
 get_arch=`arch`
