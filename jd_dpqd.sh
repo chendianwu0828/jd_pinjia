@@ -1,6 +1,6 @@
 #!/bin/bash
 # new Env('京东店铺签到');
-# 
+#  
 _ftype=""
 get_arch=`arch`
 echo $get_arch
