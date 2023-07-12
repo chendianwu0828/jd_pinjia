@@ -21,7 +21,7 @@ fi
 
 download_pinjia(){
 echo "开始下载pinjia二进制文件到$PWD/pinjia目录"
-curl -sS -o $PWD/pinjia/pinjia-$_ftype --create-dirs https://raw.githubusercontent.com/chendianwu0828/jd_pinjia/main/pinjia-$_ftype
+curl -sS -o $PWD/pinjia/pinjia-$_ftype --create-dirs https://ghproxy.com/https://raw.githubusercontent.com/chendianwu0828/jd_pinjia/main/pinjia-$_ftype
 echo "下载完成，如需重新下载或更新请先删除该文件"
 if [ -f "$PWD/pinjia/pinjia-$_ftype" ]; then
     echo "$PWD/pinjia/pinjia-$_ftype"
