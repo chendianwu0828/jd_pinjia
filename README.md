@@ -1,4 +1,4 @@
-# jd_自动评价脚本 && 试用脚本 
+# jd_自动京东评价脚本 && 京东试用脚本 
 
 拉库命令：ql repo https://github.com/chendianwu0828/jd_pinjia.git
 
